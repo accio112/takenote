@@ -4,7 +4,7 @@
 
 <p align="center">
  <img src="https://img.shields.io/badge/License-MIT-blue.svg">
-  <a href="#contributors"><img src="https://img.shields.io/badge/all_contributors-22-orange.svg?style=flat-square)"></a>
+  <a href="#contributors"><img src="https://img.shields.io/badge/all_contributors-23-orange.svg?style=flat-square)"></a>
   <a href="https://travis-ci.org/taniarascia/takenote"><img src="https://travis-ci.org/taniarascia/takenote.svg?branch=master"></a>
   <a href="https://coveralls.io/github/taniarascia/takenote?branch=master"><img src="https://coveralls.io/repos/github/taniarascia/takenote/badge.svg?branch=master"></a>
 </p>
@@ -12,6 +12,26 @@
 <p align="center">A web-based note-taking app with GitHub sync and Markdown support. (WIP)</p>
 
 ![Screenshot](./screenshot.png)
+
+### Simple
+
+TakeNote was made by developers for developers - a simple, plain-text note-taking app for the web with Markdown support. What you see is what you paste. No WYSIWIG, no formatting pasted from the web, and no features you don't need or want.
+
+### Organized
+
+Drag-and-drop notes into categories, instantly search through notes, and pin your favorites to the top.
+
+### Beautiful
+
+Beautiful, clean design with light and dark themes.
+
+### Sync to GitHub
+
+In progress!
+
+## Reviews
+
+> _"I think the lack of extra crap is a feature."_ — Craig Lam
 
 ## Setup
 
@@ -40,17 +60,6 @@ docker run -p 80:80 takenote
 
 To seed the app with some test data, paste the contents of `seed.js` into your browser console.
 
-## Features
-
-- [x] Plain text notes with Markdown highlighting and frontmatter metadata
-- [x] Add, update, download, temporarily delete and delete notes
-- [x] Add, update, and delete categories
-- [x] Add notes to categories or mark note as favorite
-- [x] Keybinding shortcuts for common actions
-- [x] Settings for light/dark mode, sync frequency, and Vim mode
-- [x] Search notes
-- [ ] Sync and store notes in GitHub gist (currently local storage)
-
 ## Contributing
 
 TakeNote is an open source project, and contributions of any kind are welcome! Open issues, bugs, and enhancements are all listed on the [issues](https://github.com/taniarascia/takenote/issues) tab and labeled accordingly. Feel free to open bug tickets and make feature requests. Easy bugs and features will be tagged with the `good first issue` label.
@@ -62,8 +71,7 @@ The project is written in TypeScript, React and Redux. TypeScript is set to stri
 Thanks goes to these wonderful people:
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
+<!-- prettier-ignore -->
 <table>
   <tr>
     <td align="center"><a href="https://www.taniarascia.com"><img src="https://avatars3.githubusercontent.com/u/11951801?v=4" width="50px;" alt="Tania Rascia"/><br /><sub><b>Tania Rascia</b></sub></a><br /><a href="https://github.com/taniarascia/takenote/commits?author=taniarascia" title="Code">💻</a> <a href="#ideas-taniarascia" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/taniarascia/takenote/issues?q=author%3Ataniarascia" title="Bug reports">🐛</a></td>
@@ -94,13 +102,15 @@ Thanks goes to these wonderful people:
   </tr>
   <tr>
     <td align="center"><a href="https://nathanbland.github.io/"><img src="https://avatars1.githubusercontent.com/u/926111?v=4" width="50px;" alt="Nathan Bland"/><br /><sub><b>Nathan Bland</b></sub></a><br /><a href="https://github.com/taniarascia/takenote/issues?q=author%3ANathanBland" title="Bug reports">🐛</a> <a href="https://github.com/taniarascia/takenote/commits?author=NathanBland" title="Code">💻</a></td>
+    <td align="center"><a href="http://craiglam.com"><img src="https://avatars1.githubusercontent.com/u/8170456?v=4" width="50px;" alt="Craig Lam"/><br /><sub><b>Craig Lam</b></sub></a><br /><a href="https://github.com/taniarascia/takenote/commits?author=siliconeidolon" title="Code">💻</a> <a href="https://github.com/taniarascia/takenote/issues?q=author%3Asiliconeidolon" title="Bug reports">🐛</a> <a href="https://github.com/taniarascia/takenote/commits?author=siliconeidolon" title="Tests">⚠️</a></td>
   </tr>
 </table>
 
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+## Acknowledgements
+
+- A big thank you to [David Bock](https://dkbock.com/) for logo design
 
 ## Author
 

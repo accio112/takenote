@@ -17,6 +17,7 @@ const KeyboardShortcuts: React.FC = () => {
     (state: RootState) => state.noteState
   )
   const { dark } = useSelector((state: RootState) => state.themeState)
+  const { previewMarkdown } = useSelector((state: RootState) => state.previewMarkdown)
 
   const activeNote = notes.find(note => note.id === activeNoteId)
 
@@ -71,7 +72,10 @@ const KeyboardShortcuts: React.FC = () => {
     _updateCodeMirrorOption('theme', dark ? 'base16-light' : 'new-moon')
   }
 
-  useKey('ctrl+alt+o', () => {
+  useKey('ctrl+alt+n', () => {
+    if (previewMarkdown) {
+      togglePreviewMarkdownHandler()
+    }
     newNoteHandler()
   })
 
@@ -79,7 +83,7 @@ const KeyboardShortcuts: React.FC = () => {
     newTempCategoryHandler()
   })
 
-  useKey('ctrl+alt+w', () => {
+  useKey('ctrl+alt+u', () => {
     trashNoteHandler()
   })
 
@@ -87,7 +91,7 @@ const KeyboardShortcuts: React.FC = () => {
     syncNotesHandler()
   })
 
-  useKey('ctrl+alt+d', () => {
+  useKey('ctrl+alt+p', () => {
     downloadNoteHandler()
   })
 
